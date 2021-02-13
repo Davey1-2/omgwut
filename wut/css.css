@@ -1,59 +1,117 @@
-
-.navbar-brand {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase
-}
-
-.navbar .nav {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1.2rem
-}
-
-.navbar-inverse {
-    background-color: darkgrey;
-}
-
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    background-color: darkgrey;
-}
-
-.dropdown-menu {
-    background-color: darkgrey;
-}
-
-.navbar-inverse {
-    background-image: none;
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    background-image: none;
-}
-
-
-.dropdown-menu>li>a {
-    color: #FFFFFF
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    color: orange;
+@media screen and (min-width: 600px) {
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase
+    }
+    .navbar .nav {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 1.2rem
+    }
+    .dropdown-menu li a{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .dropbtn {
+        display: none;
+        list-style-type: none;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: darkgrey;
+    }
+    li{
+        margin-right:3rem ;
+    }
+    html{
+        background-color: darkgrey;
+    }
+    a:visited
+    {
+        text-decoration: none;
+        decoration: none;
+        color: white;
+    }
 }
 
 
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-menu {
-    display: none;
-    z-index: 1;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
+@media screen and (max-width: 600px) {
+    html{
+        background-color: darkgrey;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li{
+        margin-top: 0.8rem;
+        margin-left: -2rem;
+    }
+    li a{
+        text-decoration: none;
+    }
+
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase
+    }
+
+    .navbar .nav {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 1.2rem
+    }
+
+    .navbar-inverse {
+        background-color: darkgrey;
+    }
+
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        background-color: darkgrey;
+    }
+
+    .dropdown-menu {
+        background-color: darkgrey;
+    }
+
+    .navbar-inverse {
+        background-image: none;
+    }
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        background-image: none;
+    }
+
+
+    .dropdown-menu > li > a {
+        color: #FFFFFF
+    }
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: orange;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
