@@ -1,3 +1,7 @@
+$nav-grey: darkgrey;
+$background : white;
+$link: deeppink;
+
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -13,11 +17,12 @@ p {
   margin-bottom: -10rem;
   font-family: "Microsoft JhengHei UI Light", sans-serif;
   font-weight: bold;
-  color: darkgrey;
-}
-p a {
-  color: deeppink;
-  text-decoration: none;
+  color: $nav-grey;
+
+  a {
+    color: $link;
+    text-decoration: none;
+  }
 }
 
 * {
@@ -34,12 +39,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: darkgrey;
+  background-color: $nav-grey;
   font-family: "Microsoft JhengHei UI Light", sans-serif;
 }
 
 .logo {
-  color: white;
+  color: $background;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -49,26 +54,29 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
-}
-.nav-links li {
-  list-style: none;
-}
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $background;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
 }
 
 .burger {
   display: none;
-}
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -85,15 +93,16 @@ nav {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: darkgrey;
+    background-color: $nav-grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25%;
     transform: translateX(100%);
-  }
-  .nav-links li {
-    opacity: 0;
+
+    li {
+      opacity: 0;
+    }
   }
 
   .burger {
@@ -105,6 +114,7 @@ nav {
     margin: 2rem;
   }
 }
+
 .nav-active {
   transform: translateX(0%);
 }
@@ -114,10 +124,9 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
-/*# sourceMappingURL=hey.css.map */

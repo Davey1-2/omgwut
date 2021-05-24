@@ -1,3 +1,7 @@
+$nav-grey: darkgrey;
+$background : white;
+$link: deeppink;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +16,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: darkgrey;
+  background-color: $nav-grey;
   font-family: "Microsoft JhengHei UI Light", sans-serif;
 }
 
 .logo {
-  color: white;
+  color: $background;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -27,26 +31,29 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
-}
-.nav-links li {
-  list-style: none;
-}
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $background;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
 }
 
 .burger {
   display: none;
-}
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: $background;
+    margin: 5px;
+  }
 }
 
 html, body {
@@ -71,8 +78,8 @@ input[type=text] {
 }
 
 button {
-  background-color: darkgrey;
-  color: white;
+  background-color: $nav-grey;
+  color: $background;
   padding: 14px 0;
   margin: 10px 0;
   border: none;
@@ -108,15 +115,16 @@ button:hover {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: darkgrey;
+    background-color: $nav-grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25%;
     transform: translateX(100%);
-  }
-  .nav-links li {
-    opacity: 0;
+
+    li {
+      opacity: 0;
+    }
   }
 
   .burger {
@@ -124,6 +132,7 @@ button:hover {
     cursor: pointer;
   }
 }
+
 .nav-active {
   transform: translateX(0%);
 }
@@ -133,10 +142,9 @@ button:hover {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
-/*# sourceMappingURL=form.css.map */
